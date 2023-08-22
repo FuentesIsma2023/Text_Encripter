@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cabecera{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(10,56,113,1) 17%, rgba(0,212,255,1) 100%);
+}
+.logo{
+    width: 150px;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.list__item{
+    right: 0px;
+    list-style: none;
+}
+.list__link{
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: aliceblue;
+}
+.list__link:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+/* SECCION CENTRAL */
+main{
+    display: flex;
+    height: 80vh;
+    justify-content: space-around;
+    padding: 3rem 1rem;
+    align-items: center;
+    background-color: #f3f5fc;
+    flex-wrap: wrap;
+    min-width: max-content;
+}
+
+/* SECCION IZQUIERDA */
+.box__left{
+    display: flex;
+    flex-direction: column;
+}
+/* FORMULARIO */
+.box__form{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: center;
+}
+.form__text{
+    font-size: 25px;
+    font-weight: 700;
+}
+.box__form{
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+#name, #phone, #email, #message{
+    border: none;
+    height: 50px;
+}
+#name, #phone, #email, #message::placeholder{
+    font-size: 20px;
+    text-align: center;
+}
+#name, #phone, #email, #message:active,
+#name, #phone, #email, #message:focus{
+    border: none;
+    outline: none;
+}
+/* SECCION DERECHA */
+.box__right{
+    
+    flex-wrap: wrap;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+.profile__photo{
+    border-radius: 20px;
+}
+.name{
+    font-size: 25px;
+    font-weight: 700;
+}
+/* SECCION DE PIE DE PAGINA */
+.pie__pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(2,0,36);
+    background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(10,56,113,1) 17%, rgba(0,212,255,1) 100%);
+    color: #f3f5fc;
+    height: 10vh;
+}
+.pie{
+    font-size: 25px;
+    padding-right: 1rem;
+    
+}
+.social__media{
+    justify-content: space-around;
+    display: flex;
+    width: 350px;
+    display: flex;
+}

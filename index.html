@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.  com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c674610699.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/css index/index.body.css">
+    <link rel="stylesheet" href="/CSS/css index/index.footer.css">
+    <link rel="stylesheet" href="CSS/css index/index.header.css">
+    <link rel="stylesheet" href="/CSS/todo.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="cabecera">
+        <img class="logo" src="banner/logo.png" alt="logo de alura">
+        <ul class="list">
+            <li class="list__item"><a class="list__link" href="inicio.html">Inicio</a></li>
+            <li class="list__item"><a class="list__link" href="index.html">Encriptador</a></li>
+            <li class="list__item"><a class="list__link" class="contacto" href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <main class="main_index">
+        
+        <section class="box__left">
+            
+            <div class="informacion">
+                <textarea class="texto-a-encriptar" cols="30" rows="10" placeholder="Ingresa el texto que deseas encriptar"></textarea>
+                <p><i class="fa-solid fa-circle-info"></i>Ingresa el texto solo en letras minúsculas y sin ascentos</p>
+                
+            </div>
+
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="box__right">
+            
+            <div class="informacion">
+                <textarea id="myTextarea" class="resultado-mensaje__encriptado" cols="30" rows="10" placeholder="Aquí aparecerá tu mensaje"></textarea>
+                <p><i class="fa-solid fa-circle-check"></i>Copia el texto para desencriptarlo o para compartirlo</p>
+                <h5>Ningun mensaje fue encontrado</h5>
+            </div>
+            <div class="boton__right">
+                <button class="btn__copiar" onclick="copyText()">Copiar</button>
+                <button class="btn__cortar" onclick="btnCortar()">Cortar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie__pagina">
+        <p class="pie">Copyright &copy; Isma2023</p>
+
+        <nav class="social__media">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </nav>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

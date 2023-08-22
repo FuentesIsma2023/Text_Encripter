@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(10,56,113,1) 17%, rgba(0,212,255,1) 100%);
+}
+.logo{
+    width: 150px;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.list__item{
+    right: 0px;
+    list-style: none;
+}
+.list__link{
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: aliceblue;
+}
+.list__link:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+/* SECCION MAIN */
+.body{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f3f5fc;;
+    align-items: center;
+    padding: 2rem 2rem;
+    flex-wrap: wrap;
+}
+/* SECCION IZQUIERDA */
+.box__left{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 850px;
+    align-items: center;
+}
+.texto-a-encriptar{
+    height: 80%;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
+}
+.texto-a-encriptar::placeholder{
+    text-align: center;
+    line-height: 4rem;
+    padding-top: 2rem;
+    font-size: 40px;
+    color: #0a3871;
+}
+.texto-a-encriptar:focus,
+.texto-a-encriptar:active{
+    border: none;
+    outline: none;
+}
+.informacion{
+    text-align: center;
+    font-size: 25px;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 3rem;
+    border: none;
+    flex-wrap: wrap;
+    width: 650px;
+}
+.btn-encriptar{
+    height: 70px;
+    width: 250px;
+    
+    background: #0a3871;
+    color: #f3f5fc;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+.btn-desencriptar{
+    height: 70px;
+    width: 250px;
+    
+    color: darkblue;
+    background-color: azure;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: .5px solid darkblue;
+}
+
+/* parte derecha */
+.box__right{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 850px;
+    align-items: center;
+}
+.resultado-mensaje__encriptado{
+    height: 80%;
+    border-radius: 20px;
+    border: none;
+    width: 90%;
+    background-image: url(banner/Muñeco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.resultado-mensaje__encriptado::placeholder{
+    text-align: right;
+    margin-right: 20px;
+    padding-top: 2rem;
+    font-size: 25px;
+    font-weight: 700;
+    color: #0a3871;
+}
+
+.resultado-mensaje__encriptado:focus,
+.resultado-mensaje__encriptado:active{
+    border: none;
+    outline: none;
+}
+
+.informacion{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+.boton__right{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+.btn__copiar{
+    height: 70px;
+    width: 250px;
+    border: none;
+    background: #0a3871;
+    color: #f3f5fc;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.pie__pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.1rem 0;
+    flex-wrap: wrap;
+    background: rgb(2,0,36);
+    background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(10,56,113,1) 17%, rgba(0,212,255,1) 100%);
+    color: #f3f5fc;
+    height: auto;
+    bottom: 0;
+}
+.pie{
+    font-size: 25px;
+    padding-right: 1rem;
+    
+}
+.social__media{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 1rem;
+}
+
+@media screen and (max-width:335px) {
+    .body{
+        display: flex;
+        justify-content: center;
+        background-color: #f3f5fc;;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .cabecera{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .list{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .list__link{
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .logo{
+    }
+    .box__left{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 550px;
+        width: 350px;
+        align-items: center;
+    }
+    .botones{
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+    .btn-encriptar{
+        margin-bottom: 5px;
+    }
+    .btn-desencriptar{
+        margin-top: 5px;
+    }
+    .box__right{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 550px;
+        width: 350px;
+        align-items: center;
+    }
+    .boton__right{
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .body{
+        display: flex;
+        justify-content: center;
+        background-color: #f3f5fc;;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .cabecera{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .list{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .list__link{
+        margin-right: 15px;
+        font-size: 30px;
+    }
+    .logo{
+    }
+    .box__left{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 550px;
+        width: 350px;
+        align-items: center;
+    }
+    .botones{
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+    .btn-encriptar{
+        margin-bottom: 5px;
+    }
+    .btn-desencriptar{
+        margin-top: 5px;
+    }
+    .box__right{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 550px;
+        width: 350px;
+        align-items: center;
+    }
+    .boton__right{
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+}

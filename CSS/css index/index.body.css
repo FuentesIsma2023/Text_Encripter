@@ -1,0 +1,190 @@
+.main_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 14vh);
+    background-color:var(--background);
+    
+}
+/* ****************CONTENIDO DEL LADO izquierdo */
+.box__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    
+    flex: 2.5;
+    text-transform: capitalize;
+}
+.box__left .informacion{
+    display: flex;
+    flex-direction: column;
+}
+.box__left .informacion textarea{
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    outline-color: #0A3871;
+    background-color: var(--background);
+    border: none;
+    color: #0A3871;
+    font-weight: 600;
+    padding: 4rem;
+    box-sizing: border-box;
+}
+.box__left .informacion textarea::placeholder{
+    font-weight: 400;
+}
+.box__left .botones{
+    display: flex;
+}
+.box__left .botones button{
+    margin-left: 10px;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--buttons-color);
+    color: #ffffff;
+    font-weight: 700;
+}
+.box__left .informacion p{
+    margin: 10px 0 10px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    align-items: center;
+}
+.box__left .informacion i{
+    margin-right: 5px;
+}
+/* ****************CONTENIDO DEL LADO DERECHO */
+.box__right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    width: 90%;
+    flex: 2.5;
+}
+.box__right .informacion{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.box__right .informacion h5{
+    display: none;
+}
+.box__right .informacion p{
+    margin: 10px 0 10px 15px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.box__right .informacion i{
+    margin-right: 5px;
+}
+
+.box__right .informacion textarea{
+    border-radius: 10px;
+    text-align: center;
+    padding: 4rem;
+    outline: none;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border: none;
+    font-weight: 600;
+    height: 100%;
+    box-sizing: border-box;
+}
+.box__right .boton__right{
+    display: flex;
+    
+}
+.box__right .boton__right button{
+    margin: 10px;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--buttons-color);
+    color: #ffffff;
+    font-weight: 700;
+}
+.boton__right .btn__cortar{
+        display: none;
+    }
+@media screen and (min-width:1024px) {
+    .main_index{
+        display: flex;
+        flex-direction: row;
+        font-size: 50px;
+        
+    }
+    .box__left{
+        display: flex;
+        flex-direction: column;
+        
+        height: 80%;
+        justify-content: center;
+    }
+    .box__left .informacion{
+        height: 90%;
+        width: 90%;
+        align-items: center;
+        
+    }
+    .box__left .informacion textarea{
+        height: 100%;
+        padding: 2rem;
+        font-size: 25px;
+        border: none;
+        outline-color: #0A3871;
+        
+    }
+    .box__left .informacion textarea::placeholder{
+        font-weight: 400;
+    }
+    .box__left .botones button{
+        width: 250px;
+        color: var(--color-texts);
+        font-weight: 700;
+        font-size: 25px;
+        background-color: var(--buttons-color);
+        color: #ffffff;
+    }
+/* *************************************BOXRIGHT******************************* */
+    .box__right{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .box__right .informacion{
+        height: 90%;
+        width: 90%;
+        align-items: center;
+        position: relative;
+    }
+    .box__right .informacion h5{
+        position: absolute;
+        bottom: 10%;
+        font-size: 35px;
+    }
+    .box__right .informacion textarea{
+        height: 100%;
+        padding: 5rem;
+        font-size: 25px;
+        border: none;
+        width: 70%;
+        text-transform: capitalize;
+    }
+    .box__right .boton__right button{
+        width: 250px;
+        color: var(--color-texts);
+        font-weight: 700;
+        font-size: 25px;
+        background-color: var(--buttons-color);
+        color: #ffffff;
+    }
+    .boton__right .btn__cortar{
+        display: none;
+    }
+}
